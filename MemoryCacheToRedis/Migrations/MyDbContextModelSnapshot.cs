@@ -21,7 +21,7 @@ namespace MemoryCacheToRedis.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("MemoryCacheToRedis.Models.TestRedisModel", b =>
+            modelBuilder.Entity("MemoryCacheToRedis.Models.Employee", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -39,7 +39,7 @@ namespace MemoryCacheToRedis.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Redis");
+                    b.ToTable("Employees");
                 });
 #pragma warning restore 612, 618
         }
